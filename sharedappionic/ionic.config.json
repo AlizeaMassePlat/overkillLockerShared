@@ -1,0 +1,7 @@
+{
+  "name": "sharedappionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
