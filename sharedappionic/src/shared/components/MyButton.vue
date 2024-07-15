@@ -1,10 +1,10 @@
 <template>
   <div>
-    <ion-button v-if="isMobile" @click="handleClick">
+    <ion-button class="my-component" v-if="isMobile" @click="handleClick">
       Enregistrer (mobile)
       <p>Valeur : {{ localTest }}</p>
     </ion-button>
-    <button v-else @click="handleClick">
+    <button class="my-component" v-else @click="handleClick">
       Enregistrer (web)
       <p>Valeur : {{ localTest }}</p>
     </button>
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { defineComponent, ref, onMounted, watch } from "vue";
+import { defineComponent, ref, onMounted } from "vue";
 
 export default defineComponent({
   name: "MyButton",
@@ -52,6 +52,10 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
-/* Ajoutez vos styles ici */
+<style>
+.my-component {
+  background-color: blue;
+  padding: 10px;
+  border-radius: 5px;
+}
 </style>

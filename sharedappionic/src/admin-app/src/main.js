@@ -1,6 +1,12 @@
+;
+
 import { createApp } from 'vue';
-import Home from './Home.vue';
 import MyButton from '../../shared/components/MyButton.vue';
+import App from './views/App.vue';
+import router from './router';
 
-createApp(Home).component('MyButton', MyButton).mount('#app');
+const app = createApp(App);
 
+app.use(router);
+app.component('MyButton', MyButton);
+app.mount('#app');

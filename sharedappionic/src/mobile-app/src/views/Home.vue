@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import MyButton from '../../shared/components/MyButton.vue';
+import MyButton from '../../../shared/components/MyButton.vue';
 
 export default {
   // eslint-disable-next-line
